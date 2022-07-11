@@ -4,14 +4,13 @@ type ButtonProps={
     children: ReactNode
 }
 
-class Botao extends React.Component<ButtonProps>  {
-    render() {
+class Botao extends React.Component<{
+    children: string
+}>{
+    render(): React.ReactNode {
         return (
-            <button className={style.botao}>
-                {this.props.children}
-            </button>
+            <button className={style.botao}>{this.props.children}</button>
         )
     }
 }
-
-export default Botao;
+export default Botao
