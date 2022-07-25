@@ -5,7 +5,7 @@ type ButtonProps={
 }
 
 class Botao extends React.Component<{
-    children: string
+    children: string, onClick?: () => void
 }>{
     render(): React.ReactNode {
         return (
